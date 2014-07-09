@@ -77,7 +77,7 @@ class Board
 	def place_ship length, coords, direction
 		x, y = coords
 	
-		case direction
+		case direction # this works... but its too fking! long.. refactor
 		when :north 
 			@rows[y][x]   = "s"
 			@rows[y-1][x] = "s"
